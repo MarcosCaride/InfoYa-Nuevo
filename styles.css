@@ -153,6 +153,10 @@ body {
       margin-right: 300px;
     }
 
+.Formulario{
+  text-align: center;
+}
+
 .myImg {
   transition: 0.8s all;
     border-radius: 5px !important;
