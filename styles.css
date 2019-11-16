@@ -66,6 +66,7 @@ h1{
   font-size: 40px;
   margin: 50px;
   display: block;
+  font-weight: bold;
 }
 
 .P2{
@@ -281,4 +282,12 @@ h2{
         width: 100%;
     }
 
+}
+
+Carousel Noticias
+
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 90%;
+  height: 100%;
 }
