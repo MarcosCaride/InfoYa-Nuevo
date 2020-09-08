@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js"></script>
     <style media="screen">
       body{
         align-self: center;
@@ -34,9 +35,8 @@
     <div class="P1">
     <p>Acerca de este juego</p>
     <h6><img src="Images/Ark01.jpg" alt="" style="width:100%"></h6>
-
-
     </div>
+
     <div class="P2">
       <p>Como hombre o mujer desnudo, congelado y muriendo de hambre en las costas de una isla misteriosa llamada ARK, debes cazar, recolectar, construir objetos, plantar cultivos, investigar tecnologías y construir refugios para soportar los elementos. Usa tu astucia y recursos para matar o domesticar dinosaurios y otros seres primitivos, y asóciate con otros jugadores o atácalos para sobrevivir, dominar... y escapar!</p>
     </div>
@@ -141,11 +141,27 @@
       <div class="P2">
         <p>El hiper real mundo de ARK y sus criaturas han sido traídos a la vida utilizando un altamente personalizado motor Unreal Engine 4, con una completa iluminación dinámica e iluminación global, sistemas meteorológicos (lluvia, niebla, nieve, etc.), simulación volumétrica real de nubes, y lo último en técnicas avanzadas de procesamiento de DirectX11 y DirectX12. Música del galardonado compositor de "Ori y el Bosque Ciego", Gareth Coker!</p>
       </div>
-    </div>
-    <footer>
-      <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
-      <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>
       <br>
-      Copyright (c) 2018 Copyright Holder All Rights Reserved.</footer>
+      <br>
+      <div class="P1">
+        <p>Que Opinas?</p>
+      </div>
+      <br>
+      <div class="Valoracion">
+        <br>
+        <p id="ContadorLikes">0</p>
+        <p onclick="MeGustas()">Me gusto</p>
+        <br>
+        <p id="ContadorDislikes">0</p>
+        <p onclick="NoMeGusto()">No me gusto</p>
+        <br>
+      </div>
+      <br>
+      <br>
+    <footer>
+      <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i>Instagram</a>
+      <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
+      <br>
+      Copyright (c) 2020 Copyright Holder All Rights Reserved.</footer>
   </body>
 </html>

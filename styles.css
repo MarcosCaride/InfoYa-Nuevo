@@ -11,6 +11,29 @@ header{
   text
 }
 
+#clickParaCine{
+  display: none;
+}
+
+#clickParaHome{
+  display: none;
+  border: none;
+  outline: none;
+}
+
+#clickParaEntretenimiento{
+  display: none;
+}
+
+#btnbusqueda{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
 .movies{
   margin: 0 auto;
   text-align: center;
@@ -29,6 +52,11 @@ footer{
   background-color: #404040;
   text-align: center;
   color:white;
+  font-size: 20px;
+}
+
+.icon{
+  font-size: 50px;
 }
 
 h1{
@@ -44,9 +72,14 @@ h1{
 
 
 .H2{
-  font-size: 50px;
+  font-size: 75px !important;
   color: #ff0000;
   text-align: center;
+  overflow: hidden;
+  background-color: rgb(53, 53, 110);
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 15%;
 }
 
 .TituloPelicula{
@@ -85,6 +118,17 @@ h1{
   font-size: 25px;
   background-color: rgba(255,255,255,0.50);
   overflow:hidden;
+}
+
+.Valoracion{
+  text-align: center;
+  color: white;
+  margin-right: 30%;
+  margin-left: 30%;
+  font-size: 25px;
+  background-color: black;
+  overflow: hidden;
+  shape-outside:circle();
 }
 
 /* Add a black background color to the top navigation bar */
@@ -160,10 +204,13 @@ body {
 
 .myImg {
   transition: 0.8s all;
-    border-radius: 5px !important;
+    border-radius: 30% !important;
     cursor: pointer;
-    width: 23%;
-    height: 150px;
+    width: 22%;
+    height: 125px;
+    margin: 5px;
+    max-height: 150px;
+    min-height: 100px;
 }
 
 .myImg:hover{
@@ -253,6 +300,9 @@ i{
 
 h2{
   color: red;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Alfa Slab One', cursive;
 }
 /* seccion back to top */
 #myBtn {

@@ -10,19 +10,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
       <h1>InfoYa</h1>
-      <h2>Cine</h2>
+      <h2 id="prueba">Cine</h2>
     </header>
 
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
       <a href="Entretenimiento.html">Entretenimiento</a>
       <a href="Cine.html">Cine</a>
-      <a href="Contacto.html">Contacto</a>
-    <input type="text" placeholder="Search..">
+      <a href="Noticias.html">Noticias</a>
+      <a href="Contacto.html">Contactanos</a>
+    <input type="text" placeholder="Search.." id="searchBar">
+    <button id="btnbusqueda" type="submit" onclick="buscador()">Buscar</button>
+  </div>
+  <div class="H2">
+    <a href="Entretenimiento.html" id="clickParaEntretenimiento"><h2>Haga click aqui</h2></a>
+  </div>
+  <div class="H2">
+    <a href="Cine.html" id="clickParaCine"><h2>Haga click aqui</h2></a>
+  </div>
+  <div class="H2">
+    <a href="index.html" id="clickParaHome"><h2>Haga click aqui</h2></a>
   </div>
 
       <div class="container">
@@ -61,23 +73,47 @@
       </a>
     </div>
   </div>
-
+  <br>
   <div class="H2">
-    <h2>Top 8 Peliculas</h2>
+    <h2>Disney</h2>
   </div>
   <br>
+  <br>
+  <div class="games">
+    <a href="LosIncreibles2.html"><img class="myImg" src="images/LosIncreibles01.jpg" alt="Snow" style="width:100%;max-width:300px">
+    <a href="HanSolo.html"><img class="myImg" src="images/HanSolo01.jpg" alt="Snow" style="width:100%;max-width:300px">
+    <a href="AvengersEndgame.html"><img class="myImg" src="Images/AvengersEndgame01.jpg" alt="Snow" style="width:100%;max-width:300px">
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <div class="H2">
+    <h2>Peliculas Argentinas</h2>
+  </div>
+  <br>
+  <br>
+  <div class="games">
+    <a href="Animal.html"><img class="myImg" src="images/Animal01.jpg" alt="Snow" style="width:100%;max-width:300px">
+    <a href="ElAngel.html"><img class="myImg" src="images/ElAngel01.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <div class="H2">
+    <h2>Peliculas extranjeras</h2>
+  </div>
   <br>
   <br>
 <div class="games">
 
 <a href="LuisYsusAmigos.html"><img class="myImg" src="images/LuisYsusAmigos01.jpg" alt="Snow" style="width:100%;max-width:300px"></a>
-<a href="HanSolo.html"><img class="myImg" src="images/HanSolo01.jpg" alt="Snow" style="width:100%;max-width:300px">
-<a href="Animal.html"><img class="myImg" src="images/Animal01.jpg" alt="Snow" style="width:100%;max-width:300px">
 <a href="MamaMia2.html"><img class="myImg" src="images/MamaMia01.jpg" alt="Snow" style="width:100%;max-width:300px">
-<a href="ElAngel.html"><img class="myImg" src="images/ElAngel01.jpg" alt="Snow" style="width:100%;max-width:300px">
-<a href="LosIncreibles2.html"><img class="myImg" src="images/LosIncreibles01.jpg" alt="Snow" style="width:100%;max-width:300px">
 <a href="MisionImposible.html"><img class="myImg" src="images/MisionImposible01.jpg" alt="Snow" style="width:100%;max-width:300px">
 <a href="HotelTransylvania.html"><img class="myImg" src="images/HotelTransylvania01.jpg" alt="Snow" style="width:100%;max-width:300px">
+<a href="LaLaLand.html"><img class="myImg" src="images/LaLaLand01.png" alt="Snow" style="width:100%;max-width:300px">
 </div>
 
 
@@ -88,6 +124,8 @@
     <div class="caption"></div>
   </div>
 
+  <br>
+  <br>
   <footer>
     <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
     <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>

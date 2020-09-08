@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js"></script>
   </head>
   <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -23,9 +25,18 @@
       <a href="Cine.html">Cine</a>
       <a href="Noticias.html">Noticias</a>
       <a href="Contacto.html">Contacto</a>
-      <input type="text" placeholder="Search..">
+      <input type="text" placeholder="Search.." id="searchBar">
+      <button id="btnbusqueda" type="submit" onclick="buscador()">Buscar</button>
     </div>
-
+    <div class="H2">
+      <a href="Entretenimiento.html" id="clickParaEntretenimiento"><h2>Haga click aqui</h2></a>
+    </div>
+    <div class="H2">
+      <a href="Cine.html" id="clickParaCine"><h2>Haga click aqui</h2></a>
+    </div>
+    <div class="H2">
+      <a href="index.html" id="clickParaHome"><h2>Haga click aqui</h2></a>
+    </div>
     <div class="container">
   <h2></h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -39,15 +50,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <a href="ARK.html"><img src="Images/Ark01.jpg" alt="" style="width:100%;"></a>
+        <a href="ARK.html"><img src="Images/Ark01.jpg" alt="" style="width:100%; height: 641.25px"></a>
       </div>
 
         <div class="item">
-          <a href="CounterStrike.html"><img src="Images/CounterStrike01.jpg" alt="" style="width:100%;"></a>
+          <a href="CounterStrike.html"><img src="Images/CounterStrike01.jpg" alt="" style="width:100%; height: 641.25px"></a>
         </div>
 
         <div class="item">
-          <a href="HanSolo.html"><img src="Images/HanSolo01.jpg" alt="" style="width:100%;"></a>
+          <a href="HanSolo.html"><img src="Images/HanSolo01.jpg" alt="" style="width:100%; height: 641.25px"></a>
         </div>
       </div>
 
@@ -69,12 +80,13 @@
   <br>
 
   <div class="H2">
-    <h2>Top Peliculas</h2>
+    <a href="Cine.html"><h2>Peliculas</h2></a>
   </div>
 
   <br>
   <br>
   <br>
+  <div class="slots">
   <div class="movies">
     <a href="LuisYsusAmigos.html"><img class="myImg" src="images/LuisYsusAmigos01.jpg" alt="Snow" style=""></a>
     <a href="HanSolo.html"><img class="myImg" src="images/HanSolo01.jpg" alt="Snow" style=""></a>
@@ -85,8 +97,8 @@
     <a href="MisionImposible.html"><img class="myImg" src="images/MisionImposible01.jpg" alt="Snow" style=""></a>
     <a href="HotelTransylvania.html"><img class="myImg" src="images/HotelTransylvania01.jpg" alt="Snow" style=""></a>
     <a href="AvengersEndgame.html"><img class="myImg" src="images/AvengersEndgame01.jpg" alt="Snow" style=""></a>
-
   </div>
+</div>
 
 
 
@@ -102,7 +114,7 @@
 <br>
 
 <div class="H2">
-  <h2>Top Videojuegos</h2>
+  <a href="Entretenimiento.html"><h2>Videojuegos</h2></a>
 </div>
 
 <br>
@@ -120,6 +132,13 @@
   <a href="Battlefield1.html"><img class="myImg" src="images/Battlefield101.jpg" alt="Snow" style=""></a>
   <a href="HorizonZeroDawn.html"><img class="myImg" src="images/HorizonZeroDawn01.jpg" alt="Snow" style=""></a>
   <a href="Destiny2.html"><img class="myImg" src="images/Destiny01.jpg" alt="Snow" style=""></a>
+  <a href="ScrapMechanic.html"><img class="myImg" src="images/ScrapMechanic01.jpg" alt="Snow" style=""></a>
+  <a href="GTAV.html"><img class="myImg" src="images/GTAV01.jpg" alt="Snow" style=""></a>
+  <a href="Terraria.html"><img class="myImg" src="images/Terraria01.jpg" alt="Snow" style=""></a>
+  <a href="Rust.html"><img class="myImg" src="images/Rust01.jpg" alt="Snow" style=""></a>
+  <a href="Trove.html"><img class="myImg" src="images/Trove01.jpg" alt="Snow" style=""></a>
+  <a href="GarrysMod.html"><img class="myImg" src="images/Garry'sMod01.jpg" alt="Snow" style=""></a>
+  <a href="RedDeadII.html"><img class="myImg" src="images/RedDeadII02.jpg" alt="Snow" style=""></a>
 
 </div>
 
@@ -129,6 +148,7 @@
 <br>
 
     <script>
+    window.onscroll = function() {scrollDelete()};
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
 
@@ -150,8 +170,9 @@
     </script>
 
     <footer>
-      <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
-      <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/?hl=es-la" class="icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://es-la.facebook.com/" class="icon"><i class="fab fa-facebook"></i></a>
       <br>
-      Copyright (c) 2018 Copyright Holder All Rights Reserved.</footer>
+      Copyright (c) 2018 Copyright Holder All Rights Reserved.
+    </footer>
 </html>

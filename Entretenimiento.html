@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js" charset="utf-8"></script>
     <style media="screen">
       a{
         align-items: center;
@@ -21,17 +22,24 @@
 
         <header>
           <h1>InfoYa</h1>
-          <h2>Entretenimiento</h2>
+          <h2 id="prueba">Entretenimiento</h2>
         </header>
 
         <div class="topnav">
           <a class="active" href="index.html">Home</a>
           <a href="Entretenimiento.html">Entretenimiento</a>
           <a href="Cine.html">Cine</a>
+          <a href="Noticias.html">Noticias</a>
           <a href="Contacto.html">Contactanos</a>
-        <input type="text" placeholder="Search..">
+        <input type="text" placeholder="Search.." id="searchBar">
+        <button id="btnbusqueda" type="submit" onclick="buscador()">Buscar</button>
       </div>
-
+      <div class="H2">
+        <a href="Cine.html" id="clickParaCine"><h2>Haga click aqui</h2></a>
+      </div>
+      <div class="H2">
+        <a href="index.html" id="clickParaHome"><h2>Haga click aqui</h2></a>
+      </div>
           <div class="container">
         <h2></h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -40,6 +48,7 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
           </ol>
 
           <!-- Wrapper for slides -->
@@ -55,6 +64,10 @@
             <div class="item">
               <img src="Images/LeagueOfLegends01.jpg" alt="" style="width:100%;">
             </div>
+
+            <div class="item">
+              <img src="Images/RedDeadII02.jpg" alt="" style="width:100%;">
+            </div>
           </div>
 
           <!-- Left and right controls -->
@@ -69,10 +82,11 @@
         </div>
       </div>
 
-
+      <br>
+      <br>
 
       <div class="H2">
-        <h2>Top 8 Videojegos</h2>
+        <h2>Videojegos</h2>
       </div>
 
       <br>
@@ -90,8 +104,17 @@
         <a href="Battlefield1.html"><img class="myImg" src="images/Battlefield101.jpg" alt="Snow" style=""></a>
         <a href="HorizonZeroDawn.html"><img class="myImg" src="images/HorizonZeroDawn01.jpg" alt="Snow" style=""></a>
         <a href="Destiny2.html"><img class="myImg" src="images/Destiny01.jpg" alt="Snow" style=""></a>
+        <a href="ScrapMechanic.html"><img class="myImg" src="images/ScrapMechanic01.jpg" alt="Snow" style=""></a>
+        <a href="GTAV.html"><img class="myImg" src="images/GTAV01.jpg" alt="Snow" style=""></a>
+        <a href="Terraria.html"><img class="myImg" src="images/Terraria01.jpg" alt="Snow" style=""></a>
+        <a href="Rust.html"><img class="myImg" src="images/Rust01.jpg" alt="Snow" style=""></a>
+        <a href="Trove.html"><img class="myImg" src="images/Trove01.jpg" alt="Snow" style=""></a>
+        <a href="GarrysMod.html"><img class="myImg" src="images/Garry'sMod01.jpg" alt="Snow" style=""></a>
+        <a href="RedDeadII.html"><img class="myImg" src="images/RedDeadII02.jpg" alt="Snow" style=""></a>
 
       </div>
+      <br>
+      <br>
 
       <!-- The Modal -->
       <div id="myModal" class="modal">
@@ -104,7 +127,7 @@
         <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
         <a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>
         <br>
-        Copyright (c) 2018 Copyright Holder All Rights Reserved.</footer>
+        Copyright (c) 2020 Copyright Holder All Rights Reserved.</footer>
 
       <script>
       // Get the modal

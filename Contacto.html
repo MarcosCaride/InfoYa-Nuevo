@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js"></script>
   </head>
   <body>
 
@@ -25,15 +26,24 @@
     <a href="Cine.html">Cine</a>
     <a href="Contacto.html">Contacto</a>
     <input type="text" placeholder="Search..">
+    <button class="btnbusqueda" type="submit" onclick="buscador()">Buscar</button>
   </div>
-
-  <h1>¡Contactanos!</h1>
+  <div class="H2">
+    <a href="Entretenimiento.html"><h2>Haga click aqui</h2></a>
+  </div>
+  <div class="H2">
+    <a href="Cine.html" class="clickParaCine"><h2>Haga click aqui</h2></a>
+  </div>
+  <div class="H2">
+    <a href="index.html" class="clickParaHome"><h2>Haga click aqui</h2></a>
+  </div>
+  <h1 onclick="Logeado()" id="final">¡Contactanos!</h1>
 
   <form name="contact" netlify>
     <br>
     <div class="Formulario">
       <p>
-        <label>Name <br> <input type="text" name="name" required/></label>
+        <label id="NombreUsuario">Name <br> <input type="text" name="name" required/></label>
       </p>
       <p>
         <label>Email <br> <input type="email" name="email" required /></label>
@@ -81,7 +91,7 @@
         </select>
         <br>
         <br>
-        <button type="submit">Send</button>
+        <button type="submit" onclick="agradecimiento()">Send</button>
         <button type="Reset" name="button"> Borrar</button>
       </p>
     </div>
