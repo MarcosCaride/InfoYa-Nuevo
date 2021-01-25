@@ -1,4 +1,18 @@
-  var nombre = "noSeHainiciado";
+const express= require('express')
+const path = require('path')
+const app = express()
+const publicPath = path.resolve('./public')
+
+
+app.use(express.static(publicPath));
+app.listen(3030, () => console.log("InfoYa en funcionamiento"))
+
+app.get('/', (req, res) =>{
+  res.sendFile(path.resolve(('./views/index.html')))
+});
+
+
+var nombre = "noSeHainiciado";
 function Logeado() {
   var nombre = document.getElementById("NombreUsuario").value;
   console.log(Nombre);
@@ -15,38 +29,8 @@ function NoMeGusto() {
     console.log("Dislikes " + dislikes);
     document.getElementById("ContadorDislikes").innerHTML = dislikes;
 }
-var aBuscar = "nada"
-function buscador() {
-  aBuscar = document.getElementById("searchBar").value;
-  console.log(aBuscar);
-  if (aBuscar == "Entretenimiento") {
-    document.getElementById("clickParaEntretenimiento").style.display = "block";
-  }
-    else {
-      if (aBuscar == "Cine") {
-        document.getElementById("clickParaCine").style.display = "block";
-        console.log(aBuscar);
-      }
-      else {
-        if (aBuscar == "Inicio") {
-          document.getElementById("clickParaHome").style.display = "block"
-
-        }
-        else {
-          document.getElementById("prueba").innerHTML = "no se a encontrado lo que busca"
-        }
-      }
-    }
-  }
 
   function agradecimiento() {
     document.getElementById("final").innerHTML = "Muchas gracias por contarnos tu opinion!"
   }
-  window.onscroll = function() {scrollDelete()};
-  function scrollDelete() {
-      if (document.body.scrollTop < 20 || document.documentElement.scrollTop < 20) {
-          document.getElementById("clickParaHome").style.display = "block";
-      } else {
-          document.getElementById("clickParaHome").style.display = "none";
-      }
-  }
+
