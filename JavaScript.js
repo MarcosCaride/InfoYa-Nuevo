@@ -11,6 +11,17 @@ app.get('/', (req, res) =>{
   res.sendFile(path.resolve(('./views/index.html')))
 });
 
+app.get('/index.html', (req, res) =>{
+  res.sendFile(path.resolve(('./views/index.html')))
+});
+
+app.get('/Entretenimiento.html', (req, res) =>{
+  res.sendFile(path.resolve(('./views/Entretenimiento.html')))
+});
+
+app.get('/Cine.html', (req, res) =>{
+  res.sendFile(path.resolve(('./views/Cine.html')))
+});
 
 var nombre = "noSeHainiciado";
 function Logeado() {
